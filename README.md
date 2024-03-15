@@ -1,6 +1,5 @@
 
 # robinhood-api
-
 Microservice API for Robinhood (Purple Ventures Co., Ltd.) Test
 
 
@@ -53,6 +52,10 @@ http://localhost:8080/user/getData
 ```
 MySql : localhost:5306 (for Database tool ex.DBeaver)
 ```
+- DB Schema
+  
+![DB](https://github.com/gdvz/robinhood-api/assets/39118712/6b6e9e6f-bf17-47b5-b112-d88cf66ef3de)
+
 ```
 Data for test API
 Username : jakkarin        |     Username : robinhood      
