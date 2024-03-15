@@ -47,7 +47,17 @@ docker compose up
 ## Usage/Examples
 
 ```
+API URL ex.
 http://localhost:8080/user/getData
+```
+```
+MySql : localhost:5306 (for Database tool ex.DBeaver)
+```
+```
+Data for test API
+Username : jakkarin        |     Username : robinhood      
+Password : 1234            |     Password : 1234
+Role : ROLE_ADMIN          |     Role : ROLE_USER
 ```
 
 
