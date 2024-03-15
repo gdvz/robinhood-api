@@ -1,0 +1,45 @@
+package com.example.robinhood.entity;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.util.Date;
+
+@Getter
+@Setter
+@Entity
+@Table(name = "topic_history")
+@JsonSerialize(include= JsonSerialize.Inclusion.NON_NULL)
+public class TopicHistory {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @JsonBackReference
+    @OneToOne
+    @JoinColumn(name = "topic_id", referencedColumnName = "id")
+    private Topic topicId;
+
+    @Column(name = "topic_subject")
+    private String topicSubject;
+
+    @Column(name = "topic_description")
+    private String topicDescription;
+
+    @Column(name = "topic_status")
+    private String topicStatus;
+
+    @Column(name = "create_date_time")
+    private Date createDateTime;
+}
