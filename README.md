@@ -45,19 +45,38 @@ docker compose up
 
 ## Usage/Examples
 
-```
 API URL ex.
+```
 http://localhost:8080/user/getData
 ```
+
+API Rate Limit config example in **application.properties** 
+
+use @RateLimiter(name = "backendA") or @RateLimiter(name = "oneTime") on API controller
+
 ```
-MySql : localhost:5306 (for Database tool ex.DBeaver)
+resilience4j.ratelimiter.instances.backendA.limitForPeriod=10
+resilience4j.ratelimiter.instances.backendA.limitRefreshPeriod=10s
+resilience4j.ratelimiter.instances.backendA.timeoutDuration=0s
+
+resilience4j.ratelimiter.instances.oneTime.limitForPeriod=1
+resilience4j.ratelimiter.instances.oneTime.limitRefreshPeriod=5s
+resilience4j.ratelimiter.instances.oneTime.timeoutDuration=0s
 ```
+
+MySql (for Database tool ex.DBeaver)
+```
+ localhost:5306 
+```
+
 - DB Schema
   
 ![DB](https://github.com/gdvz/robinhood-api/assets/39118712/fbde9d0e-1cd6-42cf-8909-cb6ac3610e11)
 
-```
+
 Data for test API
+
+```
 Username : jakkarin        |     Username : robinhood      
 Password : 1234            |     Password : 1234
 Role : ROLE_ADMIN          |     Role : ROLE_USER
