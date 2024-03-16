@@ -54,7 +54,7 @@ MySql : localhost:5306 (for Database tool ex.DBeaver)
 ```
 - DB Schema
   
-![DB](https://github.com/gdvz/robinhood-api/assets/39118712/6b6e9e6f-bf17-47b5-b112-d88cf66ef3de)
+![DB](https://github.com/gdvz/robinhood-api/assets/39118712/fbde9d0e-1cd6-42cf-8909-cb6ac3610e11)
 
 ```
 Data for test API
