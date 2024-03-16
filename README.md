@@ -28,7 +28,7 @@ https://www.docker.com
 - User API
 - Topic API
 - Comment API
-- API Authentication (Username/Password)
+- API Basic Authentication (Username/Password)
 - API Rate-Limiting
 - Cross platform deployment by Docker
 
