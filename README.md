@@ -1,6 +1,6 @@
 
 # robinhood-api
-Microservice API for Robinhood (Purple Ventures Co., Ltd.) Test
+Microservice API for Robinhood (Purple Ventures Co., Ltd.) Pre-Interview assignment
 
 
 ## Tech Stack
